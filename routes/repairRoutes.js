@@ -3,7 +3,10 @@ const express = require('express');
 const { body } = require('express-validator');
 
 const { repairExists } = require('../middlewares/repairsMiddleware');
-const { protectEmployees, protectToken, } = require('../middlewares/usersMiddleware');
+const {
+  protectEmployees,
+  protectToken,
+} = require('../middlewares/usersMiddleware');
 
 const {
   createRepairValidations,
